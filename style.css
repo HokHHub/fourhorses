@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Golos Text";
-  src: url(/fonts/Golos/GolosText.ttf), url(/fonts/Golos/GolosText.eot), url(/fonts/Golos/GolosText.otf), url(/fonts/Golos/GolosText.woff), url(/fonts/Golos/GolosText.woff2);
+  src: url(fonts/Golos/GolosText.ttf), url(fonts/Golos/GolosText.eot), url(fonts/Golos/GolosText.otf), url(fonts/Golos/GolosText.woff), url(fonts/Golos/GolosText.woff2);
 }
 @font-face {
   font-family: "Merriweather";
-  src: url(/fonts/Merriweather/Merriweather.ttf), url(/fonts/Merriweather/Merriweather.eot), url(/fonts/Merriweather/Merriweather.otf), url(/fonts/Merriweather/Merriweather.woff), url(/fonts/Merriweather/Merriweather.woff2);
+  src: url(fonts/Merriweather/Merriweather.ttf), url(fonts/Merriweather/Merriweather.eot), url(fonts/Merriweather/Merriweather.otf), url(fonts/Merriweather/Merriweather.woff), url(fonts/Merriweather/Merriweather.woff2);
 }
 :root {
   --main-color: #313131;
@@ -684,7 +684,7 @@ img {
   gap: 16px;
   min-height: 112px;
   padding: 20px;
-  background-image: url("/img/cardsbg.webp");
+  background-image: url("img/cardsbg.webp");
   display: flex;
   align-items: flex-start;
   position: relative;
@@ -814,7 +814,7 @@ img {
     height: 300px;
     flex-shrink: 0;
     padding: 62px 24px 34px 20px;
-    background-image: url("/img/cardsbg.webp");
+    background-image: url("img/cardsbg.webp");
   }
   .transformation__card_all {
     display: flex;
@@ -891,7 +891,7 @@ img {
 }
 .members__card_img {
   border-radius: 195.556px;
-  background: url(/img/members_bg.webp);
+  background: url(img/members_bg.webp);
   background-color: #424241;
   background-blend-mode: difference;
   margin-bottom: 28px;
