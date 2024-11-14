@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Golos Text';
+    src: url(/fonts/Golos/GolosText.ttf),
+    url(/fonts/Golos/GolosText.eot),
+    url(/fonts/Golos/GolosText.otf),
+    url(/fonts/Golos/GolosText.woff),
+    url(/fonts/Golos/GolosText.woff2);
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url(/fonts/Merriweather/Merriweather.ttf),
+    url(/fonts/Merriweather/Merriweather.eot),
+    url(/fonts/Merriweather/Merriweather.otf),
+    url(/fonts/Merriweather/Merriweather.woff),
+    url(/fonts/Merriweather/Merriweather.woff2),
+}
+
+:root{
+    --main-color: #313131;
+    --secondary-color: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+}
+
+img{
+    display: block;
+}

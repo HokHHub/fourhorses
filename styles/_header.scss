@@ -1,0 +1,191 @@
+.header {
+    background-image: url('/img/header_bg.webp');
+    padding-top: 26px;
+    background-position: top;
+    // display: none;
+
+    &__club {
+        display: flex;
+        gap: 6.35px;
+        color: #595653;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: "Golos Text";
+        font-size: 16.651px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 108%;
+        text-transform: uppercase;
+        margin-bottom: 62px;
+
+        &_name {
+            margin: 0;
+            text-decoration: none;
+            cursor: pointer;
+            color: #595653;
+        }
+
+        &_logos {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+
+    &__main-block {
+        &_headline {
+            &_text {
+                max-width: 542px;
+                font-variant-numeric: lining-nums proportional-nums;
+                font-family: 'Merriweather';
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%;
+                /* 66px */
+                text-transform: uppercase;
+
+                &_second {
+                    margin-left: 91px;
+                }
+
+                &_third {
+                    margin-left: 33px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
+        &_extra-text {
+            max-width: 542px;
+            margin-bottom: 40px;
+            text-align: center;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: "Golos Text";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            /* 23.4px */
+        }
+
+        &_buttons {
+            margin-bottom: 130px;
+            max-width: 542px;
+            max-height: 72px;
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    &__ticker {
+        &_line {
+            background: #F54932;
+            padding: 18px 12px;
+            align-items: center;
+            gap: 12px;
+            color: var(--secondary-color);
+            display: block;
+        }
+
+        &_text {
+            display: inline-flex;
+            text-align: right;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: 'Merriweather';
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 110%;
+            /* 24.2px */
+            text-transform: uppercase;
+        }
+
+        &_dot {
+            display: inline-flex;
+            margin: 5px 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .header {
+        background-size: cover;
+        background-position: bottom;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .header {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        &__main-block {
+            &_headline {
+                &_text {
+                    font-size: 36px;
+
+                    &_second {
+                        margin-left: 63px;
+                    }
+                }
+            }
+
+            &_extra-text {
+                text-align: unset;
+            }
+
+            &_buttons {
+                flex-direction: column;
+                gap: 14px;
+            }
+        }
+
+        &__ticker {
+
+            &_line {
+                padding: 10px 12px;
+            }
+
+            &_text {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .header {
+        &__main-block {
+            &_headline {
+                &_text {
+                    &_third {
+                        margin-left: 0;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .header {
+        &__main-block {
+            &_headline {
+                &_text {
+                    font-size: 28px;
+
+                    &_third {
+                        margin-left: 0;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.lecture {
+    margin-top: 106.92px;
+    margin-bottom: 45px;
+    // display: none;
+
+    &__wrapper {
+        display: flex;
+        gap: 64px;
+
+        &_mobile{
+            display: none;
+        }
+    }
+
+    &__text {
+        max-width: 764px;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: 'Merriweather';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%;
+        /* 48.6px */
+        text-transform: uppercase;
+
+
+        &_span {
+            color: #F54932;
+            font-weight: 700;
+        }
+    }
+
+    &__img {
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 394px;
+        width: 394px;
+        height: 250px;
+        flex-shrink: 0;
+    }
+}  
+
+@media screen and (max-width: 1200px) {
+    .lecture{
+        margin-top: 48px;
+
+        &__wrapper{
+            gap: 24px;
+        }
+
+        &__text{
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1002px) {
+    .lecture{
+        &__wrapper{
+            display: none;
+            &_mobile{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                align-items: center;
+            }
+        }
+
+        &__text{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .lecture{
+        margin-bottom: 21px;
+        &__text{
+            text-align: unset;
+            font-size: 28px;
+        }
+
+        &__img{
+            width: 335px;
+            height: 212px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .lecture{
+        &__text{
+            font-size: 22px;
+        }
+
+        &__img{
+            width: 285px;
+            height: 172px;
+        }
+    }
+}

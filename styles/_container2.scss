@@ -1,0 +1,23 @@
+.container2 {
+    padding: 0 72px;
+    max-width: 1366px;
+    margin: 0 auto;
+    overflow: scroll;
+    padding-bottom: 0;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container2 {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container2 {
+        padding: 0;
+    }
+}

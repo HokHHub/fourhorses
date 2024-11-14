@@ -1,0 +1,275 @@
+.grandplay {
+    // display: none;
+
+
+    &__table {
+
+
+
+        &_mobile {
+            display: flex;
+
+            display: none;
+
+            &_row {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                border-bottom: 2px solid #D0D0D0;
+                margin-bottom: 16px;
+
+                &:last-child {
+                    border-bottom: none;
+                    margin-bottom: 0;
+                }
+            }
+
+            &_label {
+                color: rgba(49, 49, 49, 0.7);
+                font-variant-numeric: lining-nums proportional-nums;
+                font-family: "Golos Text";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                /* 24px */
+                margin-bottom: 12px;
+
+                &_span {
+                    font-variant-numeric: lining-nums proportional-nums;
+                    font-family: "Golos Text";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 120%;
+                    /* 24px */
+                }
+            }
+
+            &_value {
+                font-variant-numeric: lining-nums proportional-nums;
+                font-family: "Golos Text";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+                margin-bottom: 16px;
+                /* 24px */
+
+
+                &_lined {
+                    text-decoration: line-through;
+                    text-decoration-color: #F54932;
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 17px;
+        align-items: center;
+    }
+
+    &__row {
+        display: table-row;
+
+        &:last-child .grandplay__label,
+        &:last-child .grandplay__value {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        &:first-child .grandplay__label,
+        &:first-child .grandplay__value {
+            padding-top: 0;
+        }
+
+        .grandplay__value {
+            padding: 16px 0 16px 16px;
+        }
+    }
+
+    &__label,
+    &__value {
+        display: table-cell;
+        padding: 16px 16px 16px 0;
+        border-bottom: 2px solid #D0D0D0;
+    }
+
+    &__label {
+        opacity: 0.7;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: "Golos Text";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        /* 24px */
+        white-space: nowrap;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0px;
+            width: 2px;
+            height: 100%;
+            background-color: #D0D0D0;
+        }
+    }
+
+    &__value {
+        width: 382px;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: "Golos Text";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        /* 24px */
+
+        &_strikethrough {
+            text-decoration: line-through;
+            text-decoration-color: #F54932;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: "Golos Text";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 24px */
+            margin-right: 12px;
+        }
+
+        &_new {
+            display: inline-block;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: "Golos Text";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 24px */
+        }
+    }
+
+    &__mainblock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: 'Merriweather';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%;
+        /* 48.6px */
+        text-transform: uppercase;
+        margin-bottom: 60px;
+
+        &_span {
+            color: #F54932;
+            font-weight: 700;
+        }
+    }
+
+    &__questions {
+        cursor: pointer;
+        margin-top: 48px;
+        color: #3057A2;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: "Golos Text";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        /* 24px */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .grandplay {
+        &__img {
+            width: 400px;
+            height: 479px;
+        }
+
+        &__text {
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grandplay {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__mainblock {
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .grandplay {
+        &__text {
+            text-align: unset;
+            font-size: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grandplay {
+        &__img {
+            width: 374px;
+            height: 420px;
+        }
+
+        &__text {
+            margin-bottom: 44px;
+        }
+
+        &__mainblock {
+            align-items: normal;
+        }
+
+        &__table {
+            display: none;
+
+            &_mobile {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__questions {
+            font-size: 18px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .grandplay {
+        &__wrapper {
+            gap: 19px;
+        }
+
+        &__img {
+            width: 300px;
+            height: 360px;
+        }
+    }
+}
