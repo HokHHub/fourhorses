@@ -134,18 +134,18 @@
     display: none;
   }
 
-  &__slider{
+  &__slider {
     display: none;
     justify-content: center;
     margin-top: 28px;
     align-items: center;
     gap: 16px;
 
-    &_btn{
+    &_btn {
       cursor: pointer;
     }
 
-    &_pages{
+    &_pages {
       display: flex;
       gap: 6px;
     }
@@ -161,17 +161,30 @@
 }
 
 @media screen and (max-width: 600px) {
+  .transformation__image .container2 {
+    overflow: visible !important;
+  }
+
+  .container2 .transformation__image {
+    overflow: visible !important;
+  }
+
+  .container2 .transformation__card {
+    overflow: visible !important;
+  }
+
   .transformation {
     padding-bottom: 120px;
 
-    &__slider{
+    &__slider {
       display: flex;
     }
-    
+
     &__image {
       display: inline-flex;
       width: 327px;
       height: 182px;
+      overflow: visible;
       top: 194px;
       left: 48px;
     }
@@ -196,6 +209,7 @@
 
     &__flex {
       display: inline-flex;
+      overflow: scroll;
       gap: 20px;
       margin: 0 20px;
     }
@@ -233,12 +247,12 @@
 }
 
 @media screen and (max-width: 373px) {
-  .transformation{
-    &__title{
+  .transformation {
+    &__title {
       font-size: 30px;
     }
 
-    &__image{
+    &__image {
       width: 275px;
       height: 162px;
       left: 25px;

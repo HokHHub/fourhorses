@@ -48,6 +48,7 @@ img {
   margin: 0 auto;
   padding-bottom: 0;
   overflow: scroll;
+  overflow-y: visible;
 }
 .container2::-webkit-scrollbar {
   display: none;
@@ -767,6 +768,15 @@ img {
   }
 }
 @media screen and (max-width: 600px) {
+  .transformation__image .container2 {
+    overflow: visible !important;
+  }
+  .container2 .transformation__image {
+    overflow: visible !important;
+  }
+  .container2 .transformation__card {
+    overflow: visible !important;
+  }
   .transformation {
     padding-bottom: 120px;
   }
@@ -777,6 +787,7 @@ img {
     display: inline-flex;
     width: 327px;
     height: 182px;
+    overflow: visible;
     top: 194px;
     left: 48px;
   }
@@ -796,6 +807,7 @@ img {
   }
   .transformation__flex {
     display: inline-flex;
+    overflow: scroll;
     gap: 20px;
     margin: 0 20px;
   }

@@ -1,9 +1,11 @@
+
 .container2 {
     padding: 0 72px;
     max-width: 1366px;
     margin: 0 auto;
     padding-bottom: 0;
     overflow: scroll;
+    overflow-y: visible;
 
     &::-webkit-scrollbar {
         display: none;
