@@ -46,8 +46,8 @@ img {
   padding: 0 72px;
   max-width: 1366px;
   margin: 0 auto;
-  overflow: scroll;
   padding-bottom: 0;
+  overflow: scroll;
 }
 .container2::-webkit-scrollbar {
   display: none;
@@ -814,7 +814,7 @@ img {
     height: 300px;
     flex-shrink: 0;
     padding: 62px 24px 34px 20px;
-    background-image: url("img/cardsbg.webp");
+    background-image: url("/img/cardsbg.webp");
   }
   .transformation__card_all {
     display: flex;
